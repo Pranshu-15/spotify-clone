@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <meta name="description" content="Spotify clone made using html,css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" sizes="32x32" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="top-icons">
+            <img src="Spotify logo.png" alt="logo" class="logo">
+          <div class="link-flex">
+            <img src="home.png" alt="Home" />
+            <a href="#">Home</a>
+          </div>
+          <div class="link-flex">
+            <img src="search.png" alt="Search" />
+            <a href="#">Search</a>
+          </div>
+          <div class="link-flex">
+            <img src="data:image/png;base64,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" alt="Home" />
+            <a href="index2.html">Top Songs Now</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="flex-top">
+            <div class="link-flex">
+              <img src="playlist.png" alt="Library" />
+              <p>Your Library</p>
+            </div>
+            <div class="link-flex">
+              <img src="plus.png" />
+              <img src="boxes.png" />
+            </div>
+          </div>
+          <div class="link-flex link-flex-my-nav" style="gap: 0.5rem">
+            <div class="chip">Playlists</div>
+            <div class="chip">Artists</div>
+            <div class="chip">Podcasts & Shows</div>
+          </div>
+          <!-- Put your playlists here -->
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="navbar">
+          <div class="link-flex">
+            <img src="back_navigation.png" />
+            <img src="forward_navigation.png" />
+          </div>
+          <!-- Navbar content -->
+          <div class="link-flex" style="gap: 0; column-gap: 0.5rem">
+            <div class="chip">Upgrade</div>
+            <div class="chip">Install App</div>
+          </div>
+        </div>
+        <h2>Good Morning</h2>
+        <div class="cards-container">
+          <div class="card my-card">
+            <img src="Liked-Songs.jpg" class="card-img my-card-img" />
+            <p class="card-name">Liked Songs</p>
+          </div>
+          <div class="card my-card">
+            <img src="Rectangle 2.png" class="card-img my-card-img" />
+            <p class="card-name">Netflix Playlist</p>
+          </div>
+          <div class="card my-card">
+            <img src="Rectangle 2.png" class="card-img my-card-img" />
+            <p class="card-name">Netflix Playlist</p>
+          </div>
+          <div class="card my-card">
+            <img src="Rectangle 2.png" class="card-img my-card-img" />
+            <p class="card-name">Netflix Playlist</p>
+          </div>
+          <div class="card my-card">
+            <img src="Rectangle 2.png" class="card-img my-card-img" />
+            <p class="card-name">Netflix Playlist</p>
+          </div>
+        </div>
+        <h3>Shows you might like</h3>
+        <div class="cards-container">
+          <div class="card">
+            <img src="mix1.jpeg" class="card-img" />
+            <p class="card-name">Workout</p>
+            <p class="card-description">Pop hits to keep you fresh!</p>
+          </div>
+          <div class="card">
+            <img src="mix1.jpeg" class="card-img" />
+            <p class="card-name">Workout</p>
+            <p class="card-description">Pop hits to keep you fresh!</p>
+          </div>
+          <div class="card">
+            <img src="mix1.jpeg" class="card-img" />
+            <p class="card-name">Workout</p>
+            <p class="card-description">Pop hits to keep you fresh!</p>
+          </div>
+          <div class="card">
+            <img src="mix2.jpeg" class="card-img" />
+            <p class="card-name">Workout</p>
+            <p class="card-description">Pop hits to keep you fresh!</p>
+          </div>
+          <div class="card">
+            <img src="mix3.jpeg" class="card-img" />
+            <p class="card-name">Workout</p>
+            <p class="card-description">Pop hits to keep you fresh!</p>
+          </div>
+          <div class="card">
+            <img src="mix3.jpeg" class="card-img" />
+            <p class="card-name">Workout</p>
+            <p class="card-description">Pop hits to keep you fresh!</p>
+          </div>
+          <div class="card">
+            <img src="mix3.jpeg" class="card-img" />
+            <p class="card-name">Workout</p>
+            <p class="card-description">Pop hits to keep you fresh!</p>
+          </div>
+          <div class="card">
+            <img src="mix3.jpeg" class="card-img" />
+            <p class="card-name">Workout</p>
+            <p class="card-description">Pop hits to keep you fresh!</p>
+          </div>
+        </div>
+        <!-- <h3>Made For You</h3>
+        <div class="cards-container">
+          <div class="card">
+            <img src="mix1.jpeg" class="card-img" />
+            <p class="card-name">Workout</p>
+            <p class="card-description">Pop hits to keep you fresh!</p>
+          </div>
+          <div class="card">
+            <img src="mix2.jpeg" class="card-img" />
+            <p class="card-name">Workout</p>
+            <p class="card-description">Pop hits to keep you fresh!</p>
+          </div>
+        </div>
+      </div> -->
+      <div class="player">
+        <div class="volume-controls"></div>
+        <div class="player-center">
+          <div class="player-controls">
+            <img
+              style="height: 1rem; margin-right: 1rem; opacity: 0.8"
+              src="shuffle.png"
+            />
+            <img
+              style="height: 1rem; margin-right: 1rem; opacity: 0.8"
+              src="previous_musicbar.png"
+            />
+            <img
+              style="height: 2rem; margin-right: 1rem"
+              src="play_musicbar.png"
+            />
+            <img
+              style="height: 1rem; margin-right: 1rem; opacity: 0.8"
+              src="next_musicbar.png"
+            />
+            <img
+              style="height: 1rem; margin-right: 1rem; opacity: 0.8"
+              src="loop.png"
+            />
+          </div>
+          <div class="player-timeline">
+            <span class="current-time">0:00</span>
+            <input
+              type="range"
+              class="timeline-slider"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
+            <span class="total-time">0:00</span>
+          </div>
+        </div>
+
+        <div class="volume-controls">
+          <img
+            src="device.png"
+            style="height: 1rem; margin-right: 1rem; opacity: 0.8"
+            alt="Volume"
+          />
+          <img
+            src="playlist.png"
+            style="height: 1rem; margin-right: 1rem; opacity: 0.8"
+            alt="Settings"
+          />
+          <img
+            src="music.png"
+            style="height: 1rem; margin-right: 1rem; opacity: 0.8"
+            alt="Fullscreen"
+          />
+          <input
+            type="range"
+            class="volume-slider"
+            min="0"
+            max="100"
+            step="1"
+            value="50"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
